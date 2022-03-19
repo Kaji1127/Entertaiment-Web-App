@@ -1,0 +1,51 @@
+.header {
+	height: 5.6rem;
+
+	& .container {
+		max-width: 100%;
+
+		@media (min-width: 600px) {
+			max-width: 54rem;
+		}
+	}
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+		padding: 0 1.6rem;
+		background-color: var(--semi-dark-blue);
+	}
+
+	&__logo {
+		width: 2.5rem;
+		height: 2rem;
+	}
+
+	&__icon {
+		display: flex;
+		gap: 2.4rem;
+
+		&-img {
+			cursor: pointer;
+			&.active {
+				path {
+					fill: var(--white);
+				}
+			}
+			&:not(.active):hover {
+				path {
+					fill: var(--red);
+				}
+			}
+		}
+	}
+
+	&__profile {
+		width: 2.4rem;
+		height: 2.4rem;
+		border-radius: 50%;
+		border: 1px solid var(--white);
+	}
+}

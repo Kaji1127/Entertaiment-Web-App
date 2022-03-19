@@ -1,0 +1,32 @@
+.search {
+	&__content {
+		display: flex;
+		align-items: center;
+		gap: 1.6rem;
+		margin: 2.4rem 0;
+	}
+
+	&__input {
+		background-color: transparent;
+		border: none;
+		outline: none;
+		caret-color: var(--red);
+		color: var(--white);
+		flex-grow: 1;
+		font-size: 1.6rem;
+
+		&:focus {
+			border-bottom: 1px solid #fff;
+		}
+	}
+
+	& img {
+		width: 2.4rem;
+		height: 2.4rem;
+	}
+}
+
+::placeholder {
+	font-weight: 300;
+	font-size: 1.5rem;
+}
