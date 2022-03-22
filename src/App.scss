@@ -6,3 +6,11 @@
 .flex {
 	display: flex;
 }
+
+.active {
+	svg {
+		path {
+			fill: var(--white);
+		}
+	}
+}

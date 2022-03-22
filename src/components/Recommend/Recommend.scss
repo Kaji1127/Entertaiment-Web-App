@@ -1,0 +1,43 @@
+.recommend {
+	padding-bottom: 6rem;
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 1.5rem;
+		row-gap: 1.6rem;
+	}
+
+	&__item {
+		border-radius: 8px;
+		position: relative;
+		font-size: 1.2rem;
+		font-weight: 300;
+		display: flex;
+		flex-direction: column;
+		row-gap: 0.8rem;
+
+		&-title {
+			font-size: 1.5rem;
+		}
+
+		& img {
+			border-radius: 8px;
+		}
+	}
+
+	&__detail {
+		// align-items: center;
+		flex-direction: column;
+		gap: 0.4rem;
+		margin-bottom: 0.4rem;
+
+		&-inner {
+			gap: 0.8rem;
+		}
+	}
+
+	&__icons {
+		align-items: center;
+		gap: 0.6rem;
+	}
+}
