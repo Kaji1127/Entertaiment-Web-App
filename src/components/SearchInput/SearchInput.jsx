@@ -1,19 +1,19 @@
-import React from 'react';
 import IconSearch from '../../assets/icon-search.svg';
 import './SearchInput.scss';
 
-const SearchInput = () => {
+const SearchInput = ({ placeholder, handleSubmit, handleChange }) => {
 	return (
-		<div className="search container">
+		<form className="search container" onSubmit={handleSubmit}>
 			<div className="search__content">
 				<img src={IconSearch} alt="Search Icon" />
 				<input
 					className="search__input"
 					type="text"
-					placeholder="Search for movies or TV series"
+					placeholder={placeholder}
+					onChange={handleChange}
 				/>
 			</div>
-		</div>
+		</form>
 	);
 };
 

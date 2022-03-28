@@ -1,6 +1,5 @@
 import { NavLink, Outlet, Link } from 'react-router-dom';
-// import { ReactComponent as Logo } from '../../assets/logo.svg;';
-// import { ReactComponent as Avatar } from '../../assets/image-avatar.png';
+
 import logo from '../../assets/logo.svg';
 import avatar from '../../assets/image-avatar.png';
 import { ReactComponent as IconHome } from '../../assets/icon-nav-home.svg';
@@ -9,7 +8,6 @@ import { ReactComponent as IconTV } from '../../assets/icon-nav-tv-series.svg';
 import { ReactComponent as IconBookmark } from '../../assets/icon-nav-bookmark.svg';
 
 import './Navbar.scss';
-import SearchInput from '../SearchInput/SearchInput';
 
 const Navbar = () => {
 	return (
@@ -41,7 +39,7 @@ const Navbar = () => {
 					<img className="navbar__profile" src={avatar} alt="avatar" />
 				</nav>
 			</div>
-			<SearchInput />
+
 			<Outlet />
 		</>
 	);
