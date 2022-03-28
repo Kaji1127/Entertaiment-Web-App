@@ -4,6 +4,10 @@
 		grid-template-columns: repeat(2, 1fr);
 		column-gap: 1.5rem;
 		row-gap: 1.6rem;
+
+		@media (min-width: 36em) {
+			grid-template-columns: repeat(3, 1fr);
+		}
 	}
 
 	&__item {
