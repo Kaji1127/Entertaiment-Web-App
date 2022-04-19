@@ -5,6 +5,7 @@ import Title from '../../components/Title/Title';
 import ItemContext from '../../context/ItemContext';
 import SearchItems from '../../components/SearchItems/SearchItems';
 import SearchContext from '../../context/SearchContext';
+import { motion } from 'framer-motion';
 
 import './Bookmark.scss';
 
@@ -22,8 +23,31 @@ const Bookmark = () => {
 		(item) => item.isBookmarked === true && item.category !== 'Movie'
 	);
 
+	const containerVariants = {
+		hidden: {
+			x: -60,
+			opacity: 0,
+		},
+		visible: {
+			opacity: 1,
+			x: 0,
+			transition: { duration: 0.8, delay: 0.2 },
+		},
+		exit: {
+			x: -60,
+			opacity: 0,
+			transition: { type: 'tween' },
+		},
+	};
+
 	return (
-		<div className="bookmark">
+		<motion.div
+			className="bookmark"
+			variants={containerVariants}
+			initial="hidden"
+			animate="visible"
+			exit="exit"
+		>
 			<Search items={bookmarkItems} placeholder="Search for bookmarked shows" />
 			{searchCtx.result.length > 0 ? (
 				<SearchItems items={searchCtx.result} text={searchCtx.text} />
@@ -39,7 +63,7 @@ const Bookmark = () => {
 					</section>
 				</div>
 			)}
-		</div>
+		</motion.div>
 	);
 };
 
