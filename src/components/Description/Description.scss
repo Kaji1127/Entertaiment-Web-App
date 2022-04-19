@@ -1,0 +1,57 @@
+.description {
+	color: var(--white);
+
+	&__text {
+		display: flex;
+		font-weight: 300;
+		gap: 8px;
+		margin-bottom: 4px;
+		font-size: var(--sp-body-s);
+
+		@media screen and (min-width: 48em) {
+			font-size: var(--body-s);
+		}
+	}
+
+	&__title {
+		font-size: var(--sp-heading-xs);
+
+		@media screen and (min-width: 48em) {
+			font-size: var(--heading-s);
+		}
+	}
+
+	&__category {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+	}
+}
+
+// Trend Description
+.trend {
+	.description {
+		position: absolute;
+		bottom: 1.6rem;
+		left: 1.6rem;
+
+		@media screen and (min-width: 48em) {
+			bottom: 2.4rem;
+			left: 2.4rem;
+		}
+
+		&__text {
+			font-size: var(--sp-body-m);
+			@media screen and (min-width: 48em) {
+				font-size: var(--body-m);
+			}
+		}
+		&__title {
+			font-size: var(--sp-heading-s);
+
+			@media screen and (min-width: 48em) {
+				font-size: var(--heading-s);
+			}
+		}
+	}
+}

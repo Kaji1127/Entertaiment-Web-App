@@ -1,0 +1,54 @@
+.bookmark-icon {
+	width: 3.2rem;
+	height: 3.2rem;
+	border-radius: 50%;
+	background-color: var(--pale-dark-blue);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: 0.3s;
+	position: absolute;
+	z-index: 6;
+
+	&__image {
+		width: 1.2rem;
+		height: 1.4rem;
+	}
+
+	&:hover {
+		background-color: var(--white);
+
+		& .empty path {
+			stroke: var(--dark-blue);
+		}
+
+		& .full path {
+			fill: var(--dark-blue);
+		}
+	}
+}
+
+.trend {
+	.bookmark-icon {
+		top: 0.8rem;
+		right: 0.8rem;
+
+		@media screen and (min-width: 48em) {
+			top: 1.6rem;
+			right: 2.4rem;
+		}
+	}
+}
+
+.item {
+	.bookmark-icon {
+		top: 0.8rem;
+		right: 0.8rem;
+
+		@media screen and (min-width: 48em) {
+			top: 1.6rem;
+			right: 1.6rem;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.play-movie {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.2rem;
+	background-color: hsla(0, 100%, 100%, 0.2);
+	border-radius: 2.85rem;
+	width: 10rem;
+	padding: 0.8rem 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 5;
+	visibility: hidden;
+
+	& img {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+
+	&__text {
+		color: var(--white);
+		font-size: var(--sp-heading-xs);
+
+		@media screen and (min-width: 48em) {
+			font-size: var(--heading-s);
+		}
+	}
+}
+
+.item__inner,
+.swiper-slide {
+	&:hover {
+		.play-movie {
+			visibility: visible;
+		}
+	}
+}

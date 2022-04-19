@@ -1,0 +1,52 @@
+body {
+	font-family: 'Outfit', sans-serif;
+	background-color: var(--dark-blue);
+}
+
+.container {
+	width: 100%;
+	max-width: 34.3rem;
+	margin: 0 auto;
+
+	@media screen and (min-width: 30em) {
+		max-width: 42rem;
+	}
+
+	@media screen and (min-width: 36em) {
+		max-width: 52.8rem;
+	}
+
+	@media screen and (min-width: 48em) {
+		max-width: 72rem;
+	}
+
+	@media screen and (min-width: 62em) {
+		max-width: 92rem;
+	}
+	@media screen and (min-width: 64em) {
+		max-width: 82.4rem;
+	}
+	@media screen and (min-width: 80em) {
+		max-width: 108rem;
+	}
+	@media screen and (min-width: 90em) {
+		max-width: 94.5%;
+	}
+}
+
+.main {
+	@media screen and (min-width: 64em) {
+		flex-grow: 1;
+		margin-left: 12.8rem;
+	}
+}
+
+.section-wrapper {
+	padding-bottom: 6rem;
+}
+
+#root {
+	@media screen and (min-width: 64em) {
+		display: flex;
+	}
+}

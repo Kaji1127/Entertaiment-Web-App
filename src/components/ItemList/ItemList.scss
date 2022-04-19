@@ -1,0 +1,47 @@
+.items {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.6rem;
+	padding-top: 2.4rem;
+
+	@media screen and (min-width: 48em) {
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 3rem;
+		row-gap: 2.4rem;
+	}
+
+	@media screen and (min-width: 64em) {
+		column-gap: 4rem;
+		row-gap: 3.2rem;
+		padding-top: 3.2rem;
+	}
+
+	@media screen and (min-width: 80em) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.item {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		row-gap: 0.8rem;
+
+		&__inner {
+			cursor: pointer;
+			position: relative;
+
+			&-bg {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				border-radius: 8px;
+			}
+
+			&:hover {
+				& .item__inner-bg {
+					background-color: rgba(0, 0, 0, 0.5);
+				}
+			}
+		}
+	}
+}

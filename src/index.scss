@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+html {
+	font-size: 62.5%;
+}
+
+:root {
+	--red: hsl(0, 97%, 63%);
+	--white: hsl(0, 100%, 100%);
+	--dark-blue: hsl(223, 30%, 9%);
+	--pale-dark-blue: hsla(223, 30%, 9%, 0.4);
+	--semi-dark-blue: hsl(223, 36%, 14%);
+	--graysh-blue: hsl(223, 23%, 46%);
+
+	// SmartPhone
+	--sp-heading-l: 2rem;
+	--sp-heading-m: 1.6rem;
+	--sp-heading-s: 1.5rem;
+	--sp-heading-xs: 1.4rem;
+	--sp-body-m: 1.2rem;
+	--sp-body-s: 1.1rem;
+
+	// PC & Tablet
+	--heading-l: 3.2rem;
+	--heading-m: 2.4rem;
+	--heading-s: 1.8rem;
+	--body-m: 1.5rem;
+	--body-s: 1.3rem;
+}

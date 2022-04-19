@@ -1,0 +1,9 @@
+.title {
+	font-size: var(--sp-heading-l);
+	color: var(--white);
+	font-weight: 300;
+
+	@media screen and (min-width: 48em) {
+		font-size: var(--heading-l);
+	}
+}
