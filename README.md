@@ -14,7 +14,7 @@ This is a solution to the [Entertainment web app challenge on Frontend Mentor](h
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
-## Overview
+## 概要
 
 ### The challenge
 
